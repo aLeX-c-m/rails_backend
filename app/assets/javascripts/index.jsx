@@ -7,7 +7,7 @@ class App extends React.Component{
         super(props)
         this.state = {
             signedIn: false,
-            messages: ['hey']
+            messages: ['ruby rocks', 'rails reverence!', 'rbenv ruined rvm']
         }
         this.handleClick = this.handleClick.bind(this)
     }
