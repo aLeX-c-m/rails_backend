@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  opinion: 
+  liked_user_id: 
+  liked_comment_id: 
+  liker_id: 1
+
+two:
+  opinion: 
+  liked_user_id: 
+  liked_comment_id: 
+  liker_id: 1
