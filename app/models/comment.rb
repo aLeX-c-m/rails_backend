@@ -5,7 +5,6 @@ class Comment < ApplicationRecord
         class_name: "User"
     
         has_many :likes_received,
-        foreign_key: "liked_comment_id",
-        class_name: "Like"
+        as: :imageable
 
 end

@@ -10,7 +10,6 @@ class User < ApplicationRecord
     class_name: "Like"
 
     has_many :likes_received,
-    foreign_key: "liked_user_id",
-    class_name: "Like"
+    as: :imageable
 
 end
