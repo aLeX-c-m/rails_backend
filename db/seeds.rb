@@ -9,6 +9,6 @@
 Comment.destroy_all
 Like.destroy_all
 
-users = User.create!([{ name: 'Alex' }, { name: 'Trent' }, { name: 'John' }, { name: 'Sarah' }])   
-comments = Comment.create!([{ body: 'ruby enviro issues..', user_id: 1 }, { body: 'ruby is amazing tho', user_id: 2 }, { body: 'rbenv !!', user_id: 3 }, { body: 'yikes', user_id: 4 }, { body: 'ya...', user_id: 1 }])   
+users = User.create!([{ name: 'Alex', like_count: 0 }, { name: 'Trent', like_count: 1 }, { name: 'John', like_count: 1 }, { name: 'Sarah', like_count: -1 }])   
+comments = Comment.create!([{ body: 'ruby enviro issues..', user_id: 1, like_count: 3 }, { body: 'ruby is amazing tho', user_id: 2, like_count: 0 }, { body: 'rbenv !!', user_id: 3, like_count: 0 }, { body: 'yikes', user_id: 4, like_count: 0}, { body: 'ya...', user_id: 1, like_count: 0 }])   
 likes = Like.create!([{ opinion: true, likeable_id: 1, likeable_type: 'comment', liker_id: 2 }, { opinion: true, likeable_id: 2, likeable_type: 'user', liker_id: 3 }, { opinion: true, likeable_id: 1, likeable_type: 'comment', liker_id: 3 }, { opinion: false, likeable_id: 1, likeable_type: 'comment', liker_id: 2}, { opinion: true, likeable_id: 3, likeable_type: 'user', liker_id: 2 }])   
